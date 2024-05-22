@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { TaskList } from './task_list/taskList';
-import { AddModal } from './addModal/addModal';
-import { NoteState } from './task_list/taskListNote';
+import { TaskList } from './taskList/taskList';
+import { NoteState } from './taskList/taskListNote';
+import { CreateTaskModal } from './CreateTaskModal/CreateTaskModal';
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
         setModalOpen={setModalOpen}
         taskListNotes={taskListNotes}
       />
-      <AddModal
+      <CreateTaskModal
         isOpen={modalOpen}
         onClose={handleClose}
         taskListNotes={taskListNotes}

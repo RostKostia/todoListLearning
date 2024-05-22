@@ -1,5 +1,6 @@
 import { ChangeEventHandler, SetStateAction, useState } from "react";
-import { taskListNoteProps } from "../task_list/taskListNote";
+import { taskListNoteProps } from "../taskList/taskListNote";
+
 
 export interface modalProps {
     isOpen: boolean;
@@ -8,7 +9,7 @@ export interface modalProps {
 
 }
 
-export const AddModal: React.FC<modalProps> = ({ isOpen, onClose, taskListNotes }) => {
+export const CreateTaskModal: React.FC<modalProps> = ({ isOpen, onClose, taskListNotes }) => {
 
     //states 
     const [noteName, setNoteName] = useState('')
