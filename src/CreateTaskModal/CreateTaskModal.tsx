@@ -24,10 +24,11 @@ export const CreateTaskModal: React.FC<modalProps> = ({ isOpen, onClose, taskLis
     }
     //there is certanlt a way to make it more elegant but i didnt figuire out how
     const handleSave = () => {
-        const newNote:taskListNoteProps = ({
+        const newNote: taskListNoteProps = ({
             id: taskListNotes.length + 1,
             name: noteName,
             text: noteText,
+            check: false,
         })
         taskListNotes.push(newNote)
         setNoteName('')
@@ -43,13 +44,17 @@ export const CreateTaskModal: React.FC<modalProps> = ({ isOpen, onClose, taskLis
                         <button className="close-button" onClick={onClose}><h2>close</h2></button>
                     </div>
                     <div className="modal-content">
-                    <label className="name">Name :</label>
-                        <div className="modal-text">
-                            <input type="text" id='name' className="writable-field" onChange={handleNameChange} value={noteName} />
+                        <div className="modal-text-box">
+                            <label className="name">Name :</label>
+
+                                <input type="text" id='input-text' className="writable-field" onChange={handleNameChange} value={noteName} />
+
                         </div>
-                        <label className="name">Note Text :</label>
-                        <div className="modal-text">
-                            <input type="text" id='text' className="writable-field" onChange={handleTextChange} value={noteText} />
+                        <div className="modal-text-box">
+                            <label className="name">Note Text :</label>
+
+                                <input type="text" id='input-text' className="writable-field" onChange={handleTextChange} value={noteText} />
+
                         </div>
                     </div>
                     <div className="modal-footer">

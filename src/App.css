@@ -13,8 +13,8 @@
   border-radius: 1px;
   border: 3px;
   height: fit-content;
-  width: fit-content;
   padding: 2%;
+  max-width: 80%;
 }
 
 .add_button{
@@ -36,10 +36,11 @@
 }
 
 .task-list-note{
+  display: flex;
   flex-direction: row;
   margin-top: 1%;
   padding-top: 1%;
-  align-items: center;
+  align-items: row;
   position: relative;
   background-color: rgb(205, 165, 113);
   margin-top: 2%;
@@ -77,6 +78,7 @@
   position: relative;
   width: 30%;
   left: 35%;
+  max-width: 30%;
   margin-top: 0%;
   padding-left: 0%;
   bottom: 30%;
@@ -97,26 +99,28 @@
 }
 
 .modal-box{
-  position: relative;
-  top: 20%;
-  background-color: rgba(137, 116, 116, 0.744); 
+  
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  background-color: rgb(50, 47, 47); 
   margin: auto;
   border: 1px solid #888;
   width: 20%;
-  height: 30%;
+  height: fit-content;
   padding-top: 5%;
+  padding-bottom: 5%;
   align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 .modal-content{
+  display: flex;
   align-self: center;
   position: relative;
-  width: 80%;
-}
-.modal-text{
-  position: relative;
   width: 100%;
-  left: 15%;
+  flex-direction: column;
 }
 
 .name{
@@ -138,4 +142,47 @@
   background-color: rgb(151, 61, 61);
   border: 0cap;
   border-radius: 2cap;
+}
+
+.task-list-note-box{
+  align-items: row;
+  width: 75%;
+  height: 100%;
+}
+
+.note-checkbox{
+  position: relative;
+  width:25%;
+  align-items: center;
+  
+}
+
+.note-input-checkbox{
+
+  position: relative;
+  margin-top: 25%;
+  width:50%;
+  height:50%;
+  border-style: solid;
+  border: 5%;
+}
+
+.modal-text-box{
+  padding: 2%;
+  margin: 10Px;
+  position: relative;
+  width: fit-content;
+  min-width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text{
+  width: 90%;
+}
+
+.name{
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
 }

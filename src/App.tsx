@@ -22,6 +22,7 @@ function App() {
       <TaskList
         setModalOpen={setModalOpen}
         taskListNotes={taskListNotes}
+        SetTaskListNotes={SetTaskListNotes}
       />
       <CreateTaskModal
         isOpen={modalOpen}
