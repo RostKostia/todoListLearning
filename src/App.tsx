@@ -16,6 +16,7 @@ function App() {
     setModalOpen(false)
   }
 
+  // add large list optimization
 
   return (
     <div className="App">

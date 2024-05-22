@@ -15,6 +15,7 @@
   height: fit-content;
   padding: 2%;
   max-width: 80%;
+  width: 50%;
 }
 
 .add_button{
@@ -79,8 +80,8 @@
   width: 30%;
   left: 35%;
   max-width: 30%;
-  margin-top: 0%;
-  padding-left: 0%;
+
+
   bottom: 30%;
 }
 
